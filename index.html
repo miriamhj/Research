@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your Name – Research</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#eef0ea; --surface:#e2e6dc; --ink:#1d2a25; --muted:#55645c; --line:#c5cdbf; --accent:#1f5f6b; --accent-ink:#ffffff;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif; --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#141b18; --surface:#1d2723; --ink:#e4eadf; --muted:#9aa89f; --line:#2e3b35; --accent:#7fc3cf; --accent-ink:#0f1a1c}
+}
+:root[data-theme="dark"]{--bg:#141b18; --surface:#1d2723; --ink:#e4eadf; --muted:#9aa89f; --line:#2e3b35; --accent:#7fc3cf; --accent-ink:#0f1a1c}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--sans)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.layout{max-width:1080px;margin:0 auto;padding:3rem 1.5rem;display:grid;grid-template-columns:260px 1fr;gap:4rem}
+aside{position:sticky;top:3rem;align-self:start}
+.portrait{width:140px;height:140px;border-radius:50%;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;color:var(--muted);font-size:.8rem;margin-bottom:1.5rem}
+h1{font:600 2.1rem/1.15 var(--serif);margin:0 0 .5rem;letter-spacing:-.01em}
+.role{color:var(--muted);margin:0 0 1.5rem}
+nav ul{list-style:none;margin:0 0 1.5rem;padding:0}
+nav a{display:block;padding:.3rem 0;color:var(--ink);text-decoration:none;border-left:2px solid transparent;padding-left:.75rem}
+nav a:hover{border-left-color:var(--accent)}
+.contact{font-size:.92rem;color:var(--muted)}
+.contact a{display:block}
+section{padding-bottom:3.5rem}
+h2{font:600 1.6rem/1.2 var(--serif);margin:0 0 1.25rem;padding-bottom:.6rem;border-bottom:1px solid var(--line)}
+.lede{font:400 1.25rem/1.55 var(--serif);max-width:60ch}
+.entry{display:grid;grid-template-columns:8.5rem 1fr;gap:1.25rem;margin-bottom:1.75rem}
+.entry .when{color:var(--muted);font-size:.9rem;padding-top:.15rem}
+.entry h3{font:600 1.1rem/1.35 var(--sans);margin:0}
+.entry .where{color:var(--muted);margin:0 0 .4rem}
+.entry p{margin:0;max-width:62ch}
+.pubs{list-style:none;margin:0;padding:0}
+.pubs li{margin-bottom:1.25rem;max-width:66ch}
+.pubs .me{font-weight:600}
+.pubs .venue{font-style:italic}
+.links a{margin-right:1rem;font-size:.9rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:.75rem}
+figure{margin:0}
+.ph{aspect-ratio:4/3;background:repeating-radial-gradient(circle at 30% 40%,var(--surface) 0 14px,var(--line) 14px 15px);border-radius:4px;display:grid;place-items:center;color:var(--muted);font-size:.85rem}
+figcaption{font-size:.88rem;color:var(--muted);margin-top:.4rem}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding-top:1rem}
+@media (max-width:820px){
+  .layout{grid-template-columns:1fr;gap:2rem;padding:2rem 1.25rem}
+  aside{position:static}
+  .entry{grid-template-columns:1fr;gap:.25rem}
+}
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside>
+    <div class="portrait">Your photo</div>
+    <h1>Your Name</h1>
+    <p class="role">[PhD candidate / Postdoc / Research assistant], [Department], [University]</p>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Research experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#field">Field photos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="contact">
+      <a href="mailto:you@university.edu">you@university.edu</a>
+      <a href="#">CV (PDF)</a>
+      <a href="#">Google Scholar</a>
+    </div>
+  </aside>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p class="lede">I study [your research question in one plain sentence], using [methods or systems] in [region or setting].</p>
+      <p>[Two or three sentences on your background, what you are working on now, and what you want to do next. Mention collaborators or labs if relevant.]</p>
+    </section>
+
+    <section id="experience">
+      <h2>Research experience</h2>
+      <div class="entry">
+        <div class="when">2023 – present</div>
+        <div><h3>[Project or position title]</h3><p class="where">[Lab / Institution], [Location]</p>
+        <p>[What you investigated, your role, and the main result or output.]</p></div>
+      </div>
+      <div class="entry">
+        <div class="when">2021 – 2023</div>
+        <div><h3>[Project or position title]</h3><p class="where">[Lab / Institution], [Location]</p>
+        <p>[What you investigated, your role, and the main result or output.]</p></div>
+      </div>
+      <div class="entry">
+        <div class="when">Summer 2020</div>
+        <div><h3>[Field season or internship]</h3><p class="where">[Organization], [Location]</p>
+        <p>[Fieldwork, data collection, or analysis you carried out.]</p></div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul class="pubs">
+        <li><span class="me">Your Name</span>, Coauthor A, Coauthor B (2025). [Paper title.] <span class="venue">Journal Name</span>, 12(3), 45–58.
+          <div class="links"><a href="#">DOI</a><a href="#">PDF</a><a href="#">Data</a></div></li>
+        <li>Coauthor A, <span class="me">Your Name</span> (2024). [Paper title.] <span class="venue">Journal Name</span>, 8, 101–112.
+          <div class="links"><a href="#">DOI</a><a href="#">PDF</a></div></li>
+        <li><span class="me">Your Name</span> (2024). [Conference talk or poster title.] <span class="venue">Conference Name</span>, [City].</li>
+      </ul>
+    </section>
+
+    <section id="field">
+      <h2>Field photos</h2>
+      <div class="gallery">
+        <figure><div class="ph">Photo 1</div><figcaption>[Site, season, what is happening]</figcaption></figure>
+        <figure><div class="ph">Photo 2</div><figcaption>[Site, season, what is happening]</figcaption></figure>
+        <figure><div class="ph">Photo 3</div><figcaption>[Site, season, what is happening]</figcaption></figure>
+        <figure><div class="ph">Photo 4</div><figcaption>[Site, season, what is happening]</figcaption></figure>
+        <figure><div class="ph">Photo 5</div><figcaption>[Site, season, what is happening]</figcaption></figure>
+        <figure><div class="ph">Photo 6</div><figcaption>[Site, season, what is happening]</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email <a href="mailto:you@university.edu">you@university.edu</a> about collaborations, data requests, or questions about my papers.</p>
+      <p>[Office address, department page, ORCID, or social links.]</p>
+    </section>
+
+    <footer>© 2026 Your Name</footer>
+  </main>
+</div>
+</body>
+</html>
