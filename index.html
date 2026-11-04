@@ -22,7 +22,7 @@ a{color:var(--accent)}
 a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .layout{max-width:1080px;margin:0 auto;padding:3rem 1.5rem;display:grid;grid-template-columns:260px 1fr;gap:4rem}
 aside{position:sticky;top:3rem;align-self:start}
-.portrait{width:140px;height:140px;border-radius:50%;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;color:var(--muted);font-size:.8rem;margin-bottom:1.5rem}
+.portrait{width:140px;height:140px;border-radius:50%;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;color:var(--muted);font-size:.8rem;margin-bottom:1.5rem;object-fit:cover}
 h1{font:600 2.1rem/1.15 var(--serif);margin:0 0 .5rem;letter-spacing:-.01em}
 .role{color:var(--muted);margin:0 0 1.5rem}
 nav ul{list-style:none;margin:0 0 1.5rem;padding:0}
@@ -58,7 +58,7 @@ footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padd
 <body>
 <div class="layout">
   <aside>
-    <div class="portrait">Your photo</div>
+   <img class="portrait" src="profile.jpg.jpg" alt="Photo of Miriam">
     <h1>Miriam Hauer-Jensen</h1>
     <p class="role">Recent Master's Student, Marine Resource Management, Oregon State University</p>
     <nav aria-label="Sections">
